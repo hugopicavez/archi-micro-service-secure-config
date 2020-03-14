@@ -11,7 +11,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://discUser:discPassword@localhost:8082/eureka
+      defaultZone: http://localhost:8082/eureka
   instance:
     hostname: localhost
 

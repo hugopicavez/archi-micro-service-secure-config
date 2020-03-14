@@ -5,7 +5,7 @@ server.port: 8082
 eureka:
     client:
         service-url:
-            defaultZone: http://discUser:discPassword@localhost:8082/eureka
+            defaultZone: http://localhost:8082/eureka
         register-with-eureka: false
         fetch-registry: false
     instance:
