@@ -9,8 +9,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka
-
-zuul.routes.book-service.path: /book-service/**
-zuul.routes.rating-service.path: /rating-service/**
-zuul.routes.discovery-server.path: /discovery-server
-zuul.routes.discovery-server.url: http://localhost:8082/**
