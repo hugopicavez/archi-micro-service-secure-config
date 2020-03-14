@@ -1,0 +1,14 @@
+server.port: 8083
+
+spring:
+    application.name: book-service 
+    jpa.hibernate:
+        ddl-auto: update
+    datasource:
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/archi_micro_service_secure?serverTimezone=Europe/Paris
+        username: root
+        password:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka
