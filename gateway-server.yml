@@ -9,6 +9,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka
-    registerWithEureka: true
-    fetchRegistry: true
-  instance.preferIpAddress: true
+  instance:
+    hostname: localhost
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    book-service:
+      path: /books/**
+      serviceId: book-service
+    rating-service:
+      path: /ratings/**
+      serviceId: rating-service
+
+management.endpoints.web.exposure.include: '*'
