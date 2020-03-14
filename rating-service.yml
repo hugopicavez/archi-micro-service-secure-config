@@ -10,5 +10,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8082/eureka
-
-rating-service.ribbon.listOfServers: localhost:8085,localhost:8086

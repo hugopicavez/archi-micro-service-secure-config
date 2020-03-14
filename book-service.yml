@@ -10,5 +10,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8082/eureka
-      
-book-service.ribbon.listOfServers: localhost:8083,localhost:8084
