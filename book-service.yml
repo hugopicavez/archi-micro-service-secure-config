@@ -1,4 +1,4 @@
-server.port: 8083
+microservice-produits.ribbon.listOfServers: localhost:8083,localhost:8084
 
 spring:
     application.name: book-service 
