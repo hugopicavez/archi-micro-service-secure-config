@@ -1,0 +1,12 @@
+spring:
+    application.name: ressource-server
+    
+server.port: 8084
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8082/eureka
+    instance:
+        hostname: localhost
+
+management.endpoints.web.exposure.include: '*'
